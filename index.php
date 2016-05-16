@@ -1,6 +1,8 @@
 <?php
 
 require_once 'inc/config.php';
+
+$pageSite = 'index';
 include_once 'inc/header.php';
 
 ?>

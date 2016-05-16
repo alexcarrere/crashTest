@@ -1,10 +1,38 @@
+/* Balises */
+html, body {
+	min-height: 100vh;
+}
+
 body {
-	background: url(http://localhost/projetSite/img/background.png);
+	background: url(http://localhost/crashTest/img/background.png);
 }
 
 p {
 	font-size: 16px;
 }
+
+h1 {
+	margin-bottom: 1em;
+	font-size: 3em;
+	font-family: 'Roboto';
+}
+
+h2 {
+	margin: 0;
+	padding: 0.5em;
+	font-size: 1.5em;
+}
+
+form > .row {
+	margin-left: 0;
+}
+
+/* Selecteur d'attribut, pour pouvoir cibler toutes les div ayant une classe commençant par col- */
+form > .row > div[class^="col-"]{
+	padding-left: 0;
+}
+
+/* Classes et Id */
 
 .navbar-default {
     background: #95A5A6;
@@ -24,6 +52,7 @@ p {
 #wrapper{
 	margin: 0;
 	padding: 0;
+	position: relative;
 } 
 
 #mini_wrapper {
@@ -37,104 +66,19 @@ p {
     color: white;
 }
 
+
 #sidebar {
-	min-height: 500px;
-	background-color: gray;
-	width: 25%;
-}
-
-#avatar {
-	text-align: center;
-	padding: 1em;
-	display: flex;
-	flex-direction: column;
-} 
-
-#avatar > img {
-	margin: auto;
-	max-width: 80%
-}
-
-#avatar > p {
-	padding: 1em;
-}
-
-.menu {
-	margin-bottom: 1em;
-}
-
-.menu > ul {
-	list-style-type: none;
-	padding-left: 0; 
-}
-
-.menu > ul > li {
-    line-height: 3em;
-    border-top:1px solid black;
-    margin: 0;
-}
-
-.menu > ul > li > a{
-    color: black;
-}
-
-.menu > ul > li:last-child {
-    border-bottom:1px solid black;
-}
-
-.menu > .nav > li > a{
-	padding: 0;
-}
-
-.menu > .nav-pills > li:hover {
-	/*background: cyan;*/
-	background: #6E9E1E;
-}
-
-.menu > .nav-pills > li#active {
-	border-right: 4px solid yellow;
-	background: #FE8102;
-}
-
-.menu > .nav-pills > li > a {
-	border-radius: 0;
-	padding-left: 2em;
-}
-
-.menu > .nav-pills > li > a, .menu > .nav-pills > li > a, .menu > .nav-pills > li > a {
-	background: none;
-	color: black;
-}
-
-#menu_admin {
-	margin-top: 1em;
-}
-
-#menu_admin p {
-	padding-left: 1em;
-	font-size: 1.5em;	
+	display: none;
 }
 
 #content {
-	width: 75%;
+	width: 100%;
 	background-color: #BDC3C7;
 	padding: 1em;
 }
 
-h1 {
-	margin-bottom: 1em;
-	font-size: 3em;
-	font-family: 'Roboto';
-}
-
-h2 {
-	margin: 0;
-	padding: 0.5em;
-	font-size: 1.5em;
-}
-
 #imgAccueil {
-	background: url('http://localhost/projetSite/img/Chocobo_FF.jpg');
+	background: url('http://localhost/crashTest/img/Chocobo_FF.jpg');
 	background-size: cover;
 	height: 400px;
 	margin-bottom: 1em;
@@ -152,15 +96,19 @@ h2 {
 	padding: 0 1em;
 }
 
-#footer {
-	background: #95A5A6;
-	margin-bottom: 1em;
-	border-top: 1px solid grey;
-	margin: 0;
+form .input-group {
+	padding-bottom: 1em;
+}
 
-/*	position: fixed;
-	bottom: 0;
-	width: 100%;*/
+#formContact .input-group-addon {
+	min-width: 80px;
+}
+
+#footer > .container{
+	background: #95A5A6;
+	border-top: 1px solid grey;
+	margin: auto;
+	border-radius: 0 0 15px 15px;
 }
 
 #footer ul {
@@ -171,4 +119,95 @@ h2 {
 
 #footer li {
 	margin: 0 auto;
+}
+
+
+/* Media queries */
+
+@media (min-width: 768px) {
+	#sidebar {
+		display: block;
+		min-height: 500px;
+		background-color: gray;
+		width: 25%;
+		padding: 0 0 2em 0;
+	}
+
+	#avatar {
+		text-align: center;
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+	} 
+
+	#avatar > img {
+		margin: auto;
+		max-width: 80%
+	}
+
+	#avatar > p {
+		padding: 1em;
+	}
+
+	.menu {
+		margin-bottom: 1em;
+	}
+
+	.menu > ul {
+		list-style-type: none;
+		padding-left: 0; 
+	}
+
+	.menu > ul > li {
+	    line-height: 3em;
+	    border-top:1px solid black;
+	    margin: 0;
+	}
+
+	.menu > ul > li > a{
+	    color: black;
+	}
+
+	.menu > ul > li:last-child {
+	    border-bottom:1px solid black;
+	}
+
+	.menu > .nav > li > a{
+		padding: 0;
+	}
+
+	.menu > .nav-pills > li:hover {
+		/*background: cyan;*/
+		background: #6E9E1E;
+	}
+
+	.menu > .nav-pills > li#active {
+		border-right: 4px solid yellow;
+		background: #FE8102;
+	}
+
+	.menu > .nav-pills > li > a {
+		border-radius: 0;
+		padding-left: 2em;
+	}
+
+	.menu > .nav-pills > li > a, .menu > .nav-pills > li > a, .menu > .nav-pills > li > a {
+		background: none;
+		color: black;
+	}
+
+	#menu_admin {
+		margin-top: 1em;
+	}
+
+	#menu_admin p {
+		padding-left: 1em;
+		font-size: 1.5em;	
+	}
+
+	#content {
+		width: 75%;
+		background-color: #BDC3C7;
+		padding: 1em;
+	}
 }

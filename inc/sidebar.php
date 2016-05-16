@@ -15,10 +15,65 @@
 
 	<div class="menu">
 		<ul class="nav nav-pills nav-stacked">
-			<li id="active"><a href="#">Acceuil</a></li>
-			<li><a href="#">Liste des news</a></li>
-			<li><a href="#">rechercher une news</a></li>
-			<li><a href="#">Contact</a></li>
+
+			<?php 
+				if (isset($pageSite) && $pageSite == 'index') :
+			?>
+				<li id="active">
+			<?php 
+				else :
+			?>
+				<li>
+			<?php 
+				endif;
+			?>
+				<a href="<?php echo SERVERPATH.'/index.php';?>">Acceuil</a>
+			</li>
+
+
+
+			<?php 
+				if (isset($pageSite) && $pageSite == 'list_news') :
+			?>
+				<li id="active">
+			<?php 
+				else :
+			?>
+				<li>
+			<?php 
+				endif;
+			?>
+				<a href="#">Liste des news</a>
+			</li>
+
+			<?php 
+				if (isset($pageSite) && $pageSite == 'search_news') :
+			?>
+				<li id="active">
+			<?php 
+				else :
+			?>
+				<li>
+			<?php 
+				endif;
+			?>
+				<a href="#">rechercher une news</a>
+			</li>
+
+			<?php 
+				if (isset($pageSite) && $pageSite == 'contact') :
+			?>
+				<li id="active">
+			<?php 
+				else :
+			?>
+				<li>
+			<?php 
+				endif;
+			?>
+				<a href="<?php echo SERVERPATH.'/contact.php';?>">Contact</a>
+			</li>
+			
 		</ul>
 	</div>
 
