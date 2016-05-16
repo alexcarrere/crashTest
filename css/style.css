@@ -1,0 +1,174 @@
+body {
+	background: url(http://localhost/projetSite/img/background.png);
+}
+
+p {
+	font-size: 16px;
+}
+
+.navbar-default {
+    background: #95A5A6;
+    border-bottom: 1px solid grey;
+    border-right:0;
+    border-left:0;
+    border-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+	color: black;
+	text-decoration: none;
+}
+
+#wrapper{
+	margin: 0;
+	padding: 0;
+} 
+
+#mini_wrapper {
+    position: relative;	
+    padding: 0;
+    display: flex;
+}
+
+
+#topbar {
+    color: white;
+}
+
+#sidebar {
+	min-height: 500px;
+	background-color: gray;
+	width: 25%;
+}
+
+#avatar {
+	text-align: center;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+} 
+
+#avatar > img {
+	margin: auto;
+	max-width: 80%
+}
+
+#avatar > p {
+	padding: 1em;
+}
+
+.menu {
+	margin-bottom: 1em;
+}
+
+.menu > ul {
+	list-style-type: none;
+	padding-left: 0; 
+}
+
+.menu > ul > li {
+    line-height: 3em;
+    border-top:1px solid black;
+    margin: 0;
+}
+
+.menu > ul > li > a{
+    color: black;
+}
+
+.menu > ul > li:last-child {
+    border-bottom:1px solid black;
+}
+
+.menu > .nav > li > a{
+	padding: 0;
+}
+
+.menu > .nav-pills > li:hover {
+	/*background: cyan;*/
+	background: #6E9E1E;
+}
+
+.menu > .nav-pills > li#active {
+	border-right: 4px solid yellow;
+	background: #FE8102;
+}
+
+.menu > .nav-pills > li > a {
+	border-radius: 0;
+	padding-left: 2em;
+}
+
+.menu > .nav-pills > li > a, .menu > .nav-pills > li > a, .menu > .nav-pills > li > a {
+	background: none;
+	color: black;
+}
+
+#menu_admin {
+	margin-top: 1em;
+}
+
+#menu_admin p {
+	padding-left: 1em;
+	font-size: 1.5em;	
+}
+
+#content {
+	width: 75%;
+	background-color: #BDC3C7;
+	padding: 1em;
+}
+
+h1 {
+	margin-bottom: 1em;
+	font-size: 3em;
+	font-family: 'Roboto';
+}
+
+h2 {
+	margin: 0;
+	padding: 0.5em;
+	font-size: 1.5em;
+}
+
+#imgAccueil {
+	background: url('http://localhost/projetSite/img/Chocobo_FF.jpg');
+	background-size: cover;
+	height: 400px;
+	margin-bottom: 1em;
+}
+
+#news_index img {
+	float: left;
+	padding-right: 1em;
+}
+
+.news {
+	border-radius: 15px;
+	background-color: red;
+	border:1px solid cyan;
+	padding: 0 1em;
+}
+
+#footer {
+	background: #95A5A6;
+	margin-bottom: 1em;
+	border-top: 1px solid grey;
+	margin: 0;
+
+/*	position: fixed;
+	bottom: 0;
+	width: 100%;*/
+}
+
+#footer ul {
+	display: flex;
+	margin: 0;
+	line-height: 3em;
+}
+
+#footer li {
+	margin: 0 auto;
+}
