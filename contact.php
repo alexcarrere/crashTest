@@ -37,7 +37,7 @@ include_once 'inc/header.php';
 
 	<div class="input-group">
 		<label for="formContent" class="input-group-addon">Message</label>
-		<textarea name="content" id="formContent" class="form-control" placeholder="Laissez votre message..."></textarea>
+		<textarea name="formContent" id="formContent" class="form-control" placeholder="Laissez votre message..."></textarea>
 	</div>
 
 	<div class="input-group">
