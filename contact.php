@@ -17,14 +17,14 @@ include_once 'inc/header.php';
 		<div class="col-md-6">
 			<div class="input-group">
 				<label for="firstname" class="input-group-addon">Prénom</label>
-				<input type="text" name="firstname" id="firstname" class="form-control" placeholder="Entrez votre prénom.." value="">
+				<input type="text" name="firstname" id="firstname" class="form-control" placeholder="Entrez votre prénom.." data-form="input-form">
 			</div>
 		</div>
 
 		<div class="col-md-6">
 			<div class="input-group">
 				<label for="lastname" class="input-group-addon">Nom</label>
-				<input type="text" name="lastname" id="lastname" class="form-control" placeholder="Entrez votre nom..." value="">
+				<input type="text" name="lastname" id="lastname" class="form-control" placeholder="Entrez votre nom..." data-form="input-form">
 			</div>
 		</div>
 
@@ -32,12 +32,12 @@ include_once 'inc/header.php';
 
 	<div class="input-group">
 		<label for="email" class="input-group-addon">Email</label>
-		<input type="email" name="email" id="email" class="form-control" placeholder="Entrez votre adresse e-mail..." value="">
+		<input type="email" name="email" id="email" class="form-control" placeholder="Entrez votre adresse e-mail..." data-form="input-form">
 	</div>
 
 	<div class="input-group">
 		<label for="formContent" class="input-group-addon">Message</label>
-		<textarea name="formContent" id="formContent" class="form-control" placeholder="Laissez votre message..."></textarea>
+		<textarea name="formContent" id="formContent" class="form-control" placeholder="Laissez votre message..." data-form="input-form"></textarea>
 	</div>
 
 	<div class="input-group">
