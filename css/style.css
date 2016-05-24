@@ -77,13 +77,6 @@ form > .row > div[class^="col-"]{
 	padding: 1em;
 }
 
-#imgAccueil {
-	background: url('http://localhost/crashTest/img/Chocobo_FF.jpg');
-	background-size: cover;
-	height: 400px;
-	margin-bottom: 1em;
-}
-
 #news_index img {
 	float: left;
 	padding-right: 1em;
@@ -203,6 +196,14 @@ form .input-group {
 	#menu_admin p {
 		padding-left: 1em;
 		font-size: 1.5em;	
+	}
+
+	#imgAccueil {
+		background: url('http://localhost/crashTest/img/Chocobo_FF.jpg');
+		background-size: cover;
+		height: 400px;
+		margin-bottom: 1em;
+		border-radius: 15px;
 	}
 
 	#content {

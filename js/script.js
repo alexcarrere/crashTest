@@ -30,7 +30,20 @@ $(function(){
 
 			//Si le formulaire est valide
 			if (formValid == true){	
-				console.log('formulaire envoyé');
+
+				var val = $(this).serialize();
+
+				$.ajax({
+					url: "inc/traitmentContactForm.php",
+					type: "post",
+					data: val,
+					dataType: 'text',
+					success: function(data){
+						$('.alert').remove();
+						$('#formContact').before('<div class="alert alert-success" role="alert">'+data+'</div>');
+						$('[data-form="input-form"]').val('');
+					},
+				}); 
 			}
 		});
 	};
